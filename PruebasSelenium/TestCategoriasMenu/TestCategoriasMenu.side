@@ -1,0 +1,740 @@
+{
+  "id": "224b90f5-a92d-4ade-9956-f557e5f8e364",
+  "version": "2.0",
+  "name": "TestCategoriasMenu",
+  "url": "https://localhost:44335/Home/Index",
+  "tests": [{
+    "id": "936169c6-99e7-4d71-9998-c1582b294b76",
+    "name": "ValidarListaCategorias",
+    "commands": [{
+      "id": "314349ae-7126-4a7e-bd0a-8e809a80b086",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44335/Home/Index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7002023a-de7d-44d7-8fca-5b76d04cbc56",
+      "comment": "",
+      "command": "click",
+      "target": "id=goCarta",
+      "targets": [
+        ["css=#goCarta > .cufon:nth-child(1) > canvas", "css:finder"],
+        ["xpath=//a[@id='goCarta']/cufon/canvas", "xpath:idRelative"],
+        ["xpath=//li[5]/a/cufon/canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05512532-2745-4bc2-b198-34d9d6dc5bbc",
+      "comment": "",
+      "command": "click",
+      "target": "id=navbarMenu",
+      "targets": [
+        ["id=navbarMenu", "id"],
+        ["linkText=Menú", "linkText"],
+        ["css=#navbarMenu", "css:finder"],
+        ["xpath=//a[contains(text(),'Menú')]", "xpath:link"],
+        ["xpath=//a[@id='navbarMenu']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6e797e0-0f10-4db6-b67d-f73e898f9fdd",
+      "comment": "",
+      "command": "click",
+      "target": "id=goCategorias",
+      "targets": [
+        ["id=goCategorias", "id"],
+        ["linkText=Categorías", "linkText"],
+        ["css=#goCategorias", "css:finder"],
+        ["xpath=//a[contains(text(),'Categorías')]", "xpath:link"],
+        ["xpath=//a[@id='goCategorias']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/Categorias/Index')]", "xpath:href"],
+        ["xpath=//li/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Categorías')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "81cfc526-3548-4702-8944-e1a6954c9da5",
+      "comment": "",
+      "command": "click",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Lista de Categorías')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "72443754-9937-4756-bcc3-c44b409f2ded",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Lista de Categorías')]", "xpath:innerText"]
+      ],
+      "value": "Lista de Categorías"
+    }, {
+      "id": "0efceb19-a965-4e50-b8dc-25cde1a40402",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "59d6b685-b19f-4650-a92c-e1e076be9093",
+    "name": "ValidarCargaFormularioCategoria",
+    "commands": [{
+      "id": "ec7058fa-d1cb-48c8-96a7-e522b8db83af",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44335/Home/Index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "63d58cc5-a029-4a3b-bb2c-04ae4246d716",
+      "comment": "",
+      "command": "click",
+      "target": "id=goCarta",
+      "targets": [
+        ["css=.cufon:nth-child(4) > canvas", "css:finder"],
+        ["xpath=//a[@id='goCarta']/cufon[4]/canvas", "xpath:idRelative"],
+        ["xpath=//cufon[4]/canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a75a5ec-1af9-4ccc-b37f-d0e16caa2a97",
+      "comment": "",
+      "command": "click",
+      "target": "id=navbarMenu",
+      "targets": [
+        ["id=navbarMenu", "id"],
+        ["linkText=Menú", "linkText"],
+        ["css=#navbarMenu", "css:finder"],
+        ["xpath=//a[contains(text(),'Menú')]", "xpath:link"],
+        ["xpath=//a[@id='navbarMenu']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a25b2ddd-6236-4208-8370-299a260a909d",
+      "comment": "",
+      "command": "click",
+      "target": "id=goCategorias",
+      "targets": [
+        ["id=goCategorias", "id"],
+        ["linkText=Categorías", "linkText"],
+        ["css=#goCategorias", "css:finder"],
+        ["xpath=//a[contains(text(),'Categorías')]", "xpath:link"],
+        ["xpath=//a[@id='goCategorias']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/Categorias/Index')]", "xpath:href"],
+        ["xpath=//li/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Categorías')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "01efc009-1a60-46f4-91da-8f59131aa9be",
+      "comment": "",
+      "command": "click",
+      "target": "id=agregarNuevaCategoria",
+      "targets": [
+        ["id=agregarNuevaCategoria", "id"],
+        ["linkText=Agregar nueva categoria", "linkText"],
+        ["css=#agregarNuevaCategoria", "css:finder"],
+        ["xpath=//a[contains(text(),'Agregar nueva categoria')]", "xpath:link"],
+        ["xpath=//a[@id='agregarNuevaCategoria']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Categorias/Create')]", "xpath:href"],
+        ["xpath=//div/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Agregar nueva categoria')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "726af60e-148c-4561-bc0d-e4451e70f97b",
+      "comment": "",
+      "command": "click",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Crear Nueva Categoría')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a9af24d-cf78-466a-a885-f1f3d591d57e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Crear Nueva Categoría')]", "xpath:innerText"]
+      ],
+      "value": "Crear Nueva Categoría"
+    }, {
+      "id": "a0ce5624-e689-4369-83b5-4eb523868b80",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "3dd3c745-a397-43e8-9ee8-4c6e148045cd",
+    "name": "ValidarFomularioCrearCategoria",
+    "commands": [{
+      "id": "e1b3b2b1-0e2c-4dd3-bb29-ca9fe0e933c8",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44335/Home/Index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e3c88014-2d18-4fdb-afce-1a423aad820d",
+      "comment": "",
+      "command": "click",
+      "target": "id=goCarta",
+      "targets": [
+        ["css=#goCarta > .cufon:nth-child(1) > canvas", "css:finder"],
+        ["xpath=//a[@id='goCarta']/cufon/canvas", "xpath:idRelative"],
+        ["xpath=//li[5]/a/cufon/canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0830886-fc76-4ff4-bee7-42b1a5fc1295",
+      "comment": "",
+      "command": "click",
+      "target": "id=navbarMenu",
+      "targets": [
+        ["id=navbarMenu", "id"],
+        ["linkText=Menú", "linkText"],
+        ["css=#navbarMenu", "css:finder"],
+        ["xpath=//a[contains(text(),'Menú')]", "xpath:link"],
+        ["xpath=//a[@id='navbarMenu']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "632f7d56-17b4-4185-8252-8be71f8a3bd0",
+      "comment": "",
+      "command": "click",
+      "target": "id=goCategorias",
+      "targets": [
+        ["id=goCategorias", "id"],
+        ["linkText=Categorías", "linkText"],
+        ["css=#goCategorias", "css:finder"],
+        ["xpath=//a[contains(text(),'Categorías')]", "xpath:link"],
+        ["xpath=//a[@id='goCategorias']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/Categorias/Index')]", "xpath:href"],
+        ["xpath=//li/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Categorías')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c47194f2-bc2f-4a5d-8cc7-8b50e2f8cc61",
+      "comment": "",
+      "command": "click",
+      "target": "id=agregarNuevaCategoria",
+      "targets": [
+        ["id=agregarNuevaCategoria", "id"],
+        ["linkText=Agregar nueva categoria", "linkText"],
+        ["css=#agregarNuevaCategoria", "css:finder"],
+        ["xpath=//a[contains(text(),'Agregar nueva categoria')]", "xpath:link"],
+        ["xpath=//a[@id='agregarNuevaCategoria']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Categorias/Create')]", "xpath:href"],
+        ["xpath=//div/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Agregar nueva categoria')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b3e0b23-8df0-4606-8d43-91100aaeef2c",
+      "comment": "",
+      "command": "click",
+      "target": "id=crearMesa",
+      "targets": [
+        ["id=crearMesa", "id"],
+        ["css=#crearMesa", "css:finder"],
+        ["xpath=//input[@id='crearMesa']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2717aa9-c774-45d5-970a-bb2e1b5648f1",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=.form-group:nth-child(1)",
+      "targets": [
+        ["css=.form-group:nth-child(1)", "css:finder"],
+        ["xpath=//form/div", "xpath:position"]
+      ],
+      "value": "266,84.40625"
+    }, {
+      "id": "f26c01ef-4191-4db0-97e3-255057d746b3",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.form-group:nth-child(1)",
+      "targets": [
+        ["css=.form-group:nth-child(1)", "css:finder"],
+        ["xpath=//form/div", "xpath:position"]
+      ],
+      "value": "266,84.40625"
+    }, {
+      "id": "ba833e9d-d289-4e66-9baf-6921ccbddbb1",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=.form-group:nth-child(1)",
+      "targets": [
+        ["css=.form-group:nth-child(1)", "css:finder"],
+        ["xpath=//form/div", "xpath:position"]
+      ],
+      "value": "266,84.40625"
+    }, {
+      "id": "18504345-a58a-4092-804a-97e62ad72dfe",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card-body",
+      "targets": [
+        ["css=.card-body", "css:finder"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d7919a1-62b4-4b45-986d-cf979277b8fb",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=NombreCategoria-error",
+      "targets": [
+        ["id=NombreCategoria-error", "id"],
+        ["css=#NombreCategoria-error", "css:finder"],
+        ["xpath=//span[@id='NombreCategoria-error']", "xpath:attributes"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": "El nombre de categoría es obligatorio"
+    }, {
+      "id": "ced6a7d5-bf5c-4271-aaee-771c4c9cce8f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "1f70bca4-8e0f-4b3a-a070-7a4b06f141ef",
+    "name": "ValidarGuardarCategoria",
+    "commands": [{
+      "id": "2dc657c5-bd14-4cf6-b863-7c1008af60bf",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44335/Home/Index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b077e449-0c9d-490f-bc7a-f99d86e5ccec",
+      "comment": "",
+      "command": "click",
+      "target": "id=goCarta",
+      "targets": [
+        ["css=.cufon:nth-child(3) > canvas", "css:finder"],
+        ["xpath=//a[@id='goCarta']/cufon[3]/canvas", "xpath:idRelative"],
+        ["xpath=//cufon[3]/canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "98a5a5e9-7720-4a68-a170-20c16061b522",
+      "comment": "",
+      "command": "click",
+      "target": "id=navbarMenu",
+      "targets": [
+        ["id=navbarMenu", "id"],
+        ["linkText=Menú", "linkText"],
+        ["css=#navbarMenu", "css:finder"],
+        ["xpath=//a[contains(text(),'Menú')]", "xpath:link"],
+        ["xpath=//a[@id='navbarMenu']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cced9c34-e48d-4a15-a807-1c5bca9c7646",
+      "comment": "",
+      "command": "click",
+      "target": "id=goCategorias",
+      "targets": [
+        ["id=goCategorias", "id"],
+        ["linkText=Categorías", "linkText"],
+        ["css=#goCategorias", "css:finder"],
+        ["xpath=//a[contains(text(),'Categorías')]", "xpath:link"],
+        ["xpath=//a[@id='goCategorias']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/Categorias/Index')]", "xpath:href"],
+        ["xpath=//li/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Categorías')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "93c3914d-af9a-43be-b6cc-47a9ecbf7c4e",
+      "comment": "",
+      "command": "click",
+      "target": "id=agregarNuevaCategoria",
+      "targets": [
+        ["id=agregarNuevaCategoria", "id"],
+        ["linkText=Agregar nueva categoria", "linkText"],
+        ["css=#agregarNuevaCategoria", "css:finder"],
+        ["xpath=//a[contains(text(),'Agregar nueva categoria')]", "xpath:link"],
+        ["xpath=//a[@id='agregarNuevaCategoria']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Categorias/Create')]", "xpath:href"],
+        ["xpath=//div/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Agregar nueva categoria')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5f8b46e-88d2-4e9c-a0f9-255981ff2374",
+      "comment": "",
+      "command": "type",
+      "target": "id=NombreCategoria",
+      "targets": [
+        ["id=NombreCategoria", "id"],
+        ["name=NombreCategoria", "name"],
+        ["css=#NombreCategoria", "css:finder"],
+        ["xpath=//input[@id='NombreCategoria']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Bebidas"
+    }, {
+      "id": "92a18536-ca42-423d-8f11-b4abcbd74fb2",
+      "comment": "",
+      "command": "click",
+      "target": "id=crearMesa",
+      "targets": [
+        ["id=crearMesa", "id"],
+        ["css=#crearMesa", "css:finder"],
+        ["xpath=//input[@id='crearMesa']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8b8480b-fc80-4cd7-a3c8-1ed573308bb4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//main/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ab42d7a-4336-4523-b66a-4caa62d07dc1",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//main/div/div", "xpath:position"]
+      ],
+      "value": "La categoria se ha creado correctamente\\n×"
+    }, {
+      "id": "29cb0e53-e5b2-40fc-9bb9-ad7fa7fef686",
+      "comment": "",
+      "command": "click",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'×')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "999ec81d-0b4e-47b4-a878-f76feeae5ff5",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ebaf95a2-ed53-4e16-bf7c-b9197b6fc39e",
+    "name": "ValidarEditarCategorias",
+    "commands": [{
+      "id": "52313f3d-018c-45e4-b700-635c74a1e149",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44335/Home/Index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "40855542-0237-4610-87cd-3b7be65cc453",
+      "comment": "",
+      "command": "click",
+      "target": "id=goCarta",
+      "targets": [
+        ["css=.cufon:nth-child(4) > canvas", "css:finder"],
+        ["xpath=//a[@id='goCarta']/cufon[4]/canvas", "xpath:idRelative"],
+        ["xpath=//cufon[4]/canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd00d254-d003-4f4b-8926-fa0658d830b7",
+      "comment": "",
+      "command": "click",
+      "target": "id=navbarMenu",
+      "targets": [
+        ["id=navbarMenu", "id"],
+        ["linkText=Menú", "linkText"],
+        ["css=#navbarMenu", "css:finder"],
+        ["xpath=//a[contains(text(),'Menú')]", "xpath:link"],
+        ["xpath=//a[@id='navbarMenu']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9fdf5f27-9a06-4fcf-934a-0e49ea1f82a0",
+      "comment": "",
+      "command": "click",
+      "target": "id=goCategorias",
+      "targets": [
+        ["id=goCategorias", "id"],
+        ["linkText=Categorías", "linkText"],
+        ["css=#goCategorias", "css:finder"],
+        ["xpath=//a[contains(text(),'Categorías')]", "xpath:link"],
+        ["xpath=//a[@id='goCategorias']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/Categorias/Index')]", "xpath:href"],
+        ["xpath=//li/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Categorías')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eaf08681-7e73-495e-bdc6-5295a237925e",
+      "comment": "",
+      "command": "click",
+      "target": "id=editCategoria",
+      "targets": [
+        ["css=tr:nth-child(5) #editCategoria", "css:finder"],
+        ["xpath=(//a[contains(text(),'Editar')])[5]", "xpath:link"],
+        ["xpath=(//a[@id='editCategoria'])[5]", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Categorias/Edit/6')]", "xpath:href"],
+        ["xpath=//tr[5]/td[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df02111e-bd6d-411c-aee7-335410e2cdab",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a85267c7-7836-4d25-acd2-795128b913a9",
+      "comment": "",
+      "command": "type",
+      "target": "id=NombreCategoria",
+      "targets": [
+        ["id=NombreCategoria", "id"],
+        ["name=NombreCategoria", "name"],
+        ["css=#NombreCategoria", "css:finder"],
+        ["xpath=//input[@id='NombreCategoria']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Bebidas Calientes"
+    }, {
+      "id": "0bd8ce4a-f3cf-48c2-af76-da0a3e5b99f2",
+      "comment": "",
+      "command": "click",
+      "target": "id=editarCategoria",
+      "targets": [
+        ["id=editarCategoria", "id"],
+        ["css=#editarCategoria", "css:finder"],
+        ["xpath=//input[@id='editarCategoria']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bde5b2c9-c132-48e0-a9e5-0c781e6d6968",
+      "comment": "",
+      "command": "click",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//main/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fcb758f6-ff85-414a-a0c7-a630c64bba59",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//main/div/div", "xpath:position"]
+      ],
+      "value": "La categoria se ha editado correctamente\\n×"
+    }, {
+      "id": "a26cd2a5-3022-44df-a35a-3dc57f57f005",
+      "comment": "",
+      "command": "click",
+      "target": "css=.close",
+      "targets": [
+        ["css=.close", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'×')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7360a6b6-f532-46d5-86a3-7b60ada709b7",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "87468b35-c0a7-4825-857d-ef94e5186585",
+    "name": "ValidarEliminarCategorias",
+    "commands": [{
+      "id": "af4b1590-9f66-4413-a795-5e6e1ed0c309",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44335/Home/Index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "096349a5-1edf-4cc1-8b60-3e0ab6602bfb",
+      "comment": "",
+      "command": "click",
+      "target": "id=goCarta",
+      "targets": [
+        ["css=.cufon:nth-child(3) > canvas", "css:finder"],
+        ["xpath=//a[@id='goCarta']/cufon[3]/canvas", "xpath:idRelative"],
+        ["xpath=//cufon[3]/canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9268569-534c-4c4d-99e5-e34172c44add",
+      "comment": "",
+      "command": "click",
+      "target": "id=navbarMenu",
+      "targets": [
+        ["id=navbarMenu", "id"],
+        ["linkText=Menú", "linkText"],
+        ["css=#navbarMenu", "css:finder"],
+        ["xpath=//a[contains(text(),'Menú')]", "xpath:link"],
+        ["xpath=//a[@id='navbarMenu']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d52878f-641b-464b-bfec-a85841a2d990",
+      "comment": "",
+      "command": "click",
+      "target": "id=goCategorias",
+      "targets": [
+        ["id=goCategorias", "id"],
+        ["linkText=Categorías", "linkText"],
+        ["css=#goCategorias", "css:finder"],
+        ["xpath=//a[contains(text(),'Categorías')]", "xpath:link"],
+        ["xpath=//a[@id='goCategorias']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/Categorias/Index')]", "xpath:href"],
+        ["xpath=//li/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Categorías')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "90dcec35-66eb-4b94-ab5c-fd003c1c8cb4",
+      "comment": "",
+      "command": "click",
+      "target": "id=deleteCategoria",
+      "targets": [
+        ["id=deleteCategoria", "id"],
+        ["linkText=Eliminar", "linkText"],
+        ["css=tr:nth-child(1) #deleteCategoria", "css:finder"],
+        ["xpath=//a[contains(text(),'Eliminar')]", "xpath:link"],
+        ["xpath=//a[@id='deleteCategoria']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Categorias/Delete/1')]", "xpath:href"],
+        ["xpath=//td[3]/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Eliminar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c89e591f-5cf4-4d8a-99f0-58c35c827b83",
+      "comment": "",
+      "command": "click",
+      "target": "id=eliminarCategoria",
+      "targets": [
+        ["id=eliminarCategoria", "id"],
+        ["css=#eliminarCategoria", "css:finder"],
+        ["xpath=//input[@id='eliminarCategoria']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8139ceb2-648e-46bf-9bdb-95d780300976",
+      "comment": "",
+      "command": "click",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//main/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b2fe678-7694-44a2-91e4-41c88a6dcad9",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//main/div/div", "xpath:position"]
+      ],
+      "value": "La categoría se ha eliminado correctamente\\n×"
+    }, {
+      "id": "7fccc6b5-3de6-473d-ae2f-da485d355fde",
+      "comment": "",
+      "command": "click",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'×')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "32bb0b73-ed67-4518-b457-0699c130f61a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "3fb7395a-e7b5-46b1-8bc5-07eafae0868e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["936169c6-99e7-4d71-9998-c1582b294b76"]
+  }],
+  "urls": ["https://localhost:44335/Home/Index"],
+  "plugins": []
+}

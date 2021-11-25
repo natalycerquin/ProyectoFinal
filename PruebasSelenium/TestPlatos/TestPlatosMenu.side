@@ -1,0 +1,1202 @@
+{
+  "id": "570d78c6-e02a-4dfb-abe8-4333f6db7d86",
+  "version": "2.0",
+  "name": "TestPlatosMenu",
+  "url": "https://localhost:44335/Home/Index",
+  "tests": [{
+    "id": "6d0419d8-8a93-4893-a752-e649fc85be4c",
+    "name": "ValidarListaPlatos",
+    "commands": [{
+      "id": "3243ae64-60a7-4f35-8cfe-3b426f4d98d1",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44335/Home/Index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "39d61686-2593-49bb-8d0d-81c4f535ee10",
+      "comment": "",
+      "command": "click",
+      "target": "id=goCarta",
+      "targets": [
+        ["css=.cufon:nth-child(2) > canvas", "css:finder"],
+        ["xpath=//a[@id='goCarta']/cufon[2]/canvas", "xpath:idRelative"],
+        ["xpath=//cufon[2]/canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d365a5e6-0c3f-4f6e-92d4-07abd9687a64",
+      "comment": "",
+      "command": "click",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Lista de Platos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fa60f88-934f-4ff5-8ff3-7d8980d01114",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Lista de Platos')]", "xpath:innerText"]
+      ],
+      "value": "Lista de Platos"
+    }, {
+      "id": "b3db76de-17f2-4d5d-948f-d3e72ae3cbbb",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "3a2f1508-31dd-4406-a806-4a290e3da82d",
+    "name": "ValidarCargarFormularioPlato",
+    "commands": [{
+      "id": "6143d9e4-b4aa-4bf2-9582-b171919fd8b8",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44335/Home/Index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e7f78d4f-14b8-45ae-99d3-d5f00e2fcab9",
+      "comment": "",
+      "command": "click",
+      "target": "id=goCarta",
+      "targets": [
+        ["css=.cufon:nth-child(2) > canvas", "css:finder"],
+        ["xpath=//a[@id='goCarta']/cufon[2]/canvas", "xpath:idRelative"],
+        ["xpath=//cufon[2]/canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f1833cf-e2bf-4008-aa1b-53cfb87da355",
+      "comment": "",
+      "command": "click",
+      "target": "id=agregarNuevoPlato",
+      "targets": [
+        ["id=agregarNuevoPlato", "id"],
+        ["linkText=Agregar nuevo plato", "linkText"],
+        ["css=#agregarNuevoPlato", "css:finder"],
+        ["xpath=//a[contains(text(),'Agregar nuevo plato')]", "xpath:link"],
+        ["xpath=//a[@id='agregarNuevoPlato']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Platos/Create')]", "xpath:href"],
+        ["xpath=//div/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Agregar nuevo plato')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0c6af58-d79f-4abd-8305-f274b084a8b3",
+      "comment": "",
+      "command": "click",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Crear Nuevo Plato')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "042d35d8-6ebc-4da8-add2-a5eb9cdd563a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Crear Nuevo Plato')]", "xpath:innerText"]
+      ],
+      "value": "Crear Nuevo Plato"
+    }, {
+      "id": "b7e17730-abad-417f-8095-e7598545cc61",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d8559f5f-1395-4c67-93df-49a2869b8cc7",
+    "name": "ValidarFormularioPlatos",
+    "commands": [{
+      "id": "3e8740a5-b107-445f-936c-e5fdc23921e0",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44335/Home/Index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b8f6c3ee-0c6f-43dc-b497-83c99dd42567",
+      "comment": "",
+      "command": "click",
+      "target": "id=goCarta",
+      "targets": [
+        ["css=.cufon:nth-child(4) > canvas", "css:finder"],
+        ["xpath=//a[@id='goCarta']/cufon[4]/canvas", "xpath:idRelative"],
+        ["xpath=//cufon[4]/canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8bbd1e3d-cda9-452a-87b8-ee816ef178be",
+      "comment": "",
+      "command": "click",
+      "target": "id=agregarNuevoPlato",
+      "targets": [
+        ["id=agregarNuevoPlato", "id"],
+        ["linkText=Agregar nuevo plato", "linkText"],
+        ["css=#agregarNuevoPlato", "css:finder"],
+        ["xpath=//a[contains(text(),'Agregar nuevo plato')]", "xpath:link"],
+        ["xpath=//a[@id='agregarNuevoPlato']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Platos/Create')]", "xpath:href"],
+        ["xpath=//div/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Agregar nuevo plato')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed742f8f-f2a4-4d5b-bb3d-a7e4a8af80d7",
+      "comment": "",
+      "command": "click",
+      "target": "id=crearPlato",
+      "targets": [
+        ["id=crearPlato", "id"],
+        ["css=#crearPlato", "css:finder"],
+        ["xpath=//input[@id='crearPlato']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0adb5958-4e68-49fa-a8bd-265c88f17d6f",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=.form-group:nth-child(1)",
+      "targets": [
+        ["css=.form-group:nth-child(1)", "css:finder"],
+        ["xpath=//form/div", "xpath:position"]
+      ],
+      "value": "251,86.40625"
+    }, {
+      "id": "0d4867a5-e7d3-4ad0-974b-48f929039c23",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.form-group:nth-child(1)",
+      "targets": [
+        ["css=.form-group:nth-child(1)", "css:finder"],
+        ["xpath=//form/div", "xpath:position"]
+      ],
+      "value": "251,86.40625"
+    }, {
+      "id": "e225e15f-d5ca-446b-ae38-a86ed5d2844a",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=.form-group:nth-child(1)",
+      "targets": [
+        ["css=.form-group:nth-child(1)", "css:finder"],
+        ["xpath=//form/div", "xpath:position"]
+      ],
+      "value": "251,86.40625"
+    }, {
+      "id": "0ac934e6-41d3-4de8-8126-4323e0853c8b",
+      "comment": "",
+      "command": "click",
+      "target": "id=crearPlato",
+      "targets": [
+        ["css=.form-group:nth-child(1)", "css:finder"],
+        ["xpath=//form/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0132ddaf-2d54-4d48-a509-f90f25e219ce",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=NombrePlato-error",
+      "targets": [
+        ["id=NombrePlato-error", "id"],
+        ["css=#NombrePlato-error", "css:finder"],
+        ["xpath=//span[@id='NombrePlato-error']", "xpath:attributes"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": "El nombre del plato es obligatorio"
+    }, {
+      "id": "095ab054-0171-4941-8843-285038f042e9",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "fc46677c-55b7-4f12-afd9-0f09ca69e059",
+    "name": "ValidarNombrePlato",
+    "commands": [{
+      "id": "fa9973c6-e3b2-47f4-99a2-7c680fce52fa",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44335/Home/Index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "20cac2f2-09d6-44fe-8858-1f3f71761aef",
+      "comment": "",
+      "command": "click",
+      "target": "id=goCarta",
+      "targets": [
+        ["css=.cufon:nth-child(4) > canvas", "css:finder"],
+        ["xpath=//a[@id='goCarta']/cufon[4]/canvas", "xpath:idRelative"],
+        ["xpath=//cufon[4]/canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "063bcbf3-cb7a-4afe-a239-4c7b710785b5",
+      "comment": "",
+      "command": "click",
+      "target": "id=agregarNuevoPlato",
+      "targets": [
+        ["id=agregarNuevoPlato", "id"],
+        ["linkText=Agregar nuevo plato", "linkText"],
+        ["css=#agregarNuevoPlato", "css:finder"],
+        ["xpath=//a[contains(text(),'Agregar nuevo plato')]", "xpath:link"],
+        ["xpath=//a[@id='agregarNuevoPlato']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Platos/Create')]", "xpath:href"],
+        ["xpath=//div/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Agregar nuevo plato')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e51f79b-633e-4eb2-8588-622b46fdc114",
+      "comment": "",
+      "command": "click",
+      "target": "id=Descripcion",
+      "targets": [
+        ["id=Descripcion", "id"],
+        ["name=Descripcion", "name"],
+        ["css=#Descripcion", "css:finder"],
+        ["xpath=//input[@id='Descripcion']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e8951bc-7dc1-4108-bfce-60d6778cb7ef",
+      "comment": "",
+      "command": "type",
+      "target": "id=Descripcion",
+      "targets": [
+        ["id=Descripcion", "id"],
+        ["name=Descripcion", "name"],
+        ["css=#Descripcion", "css:finder"],
+        ["xpath=//input[@id='Descripcion']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Carne de res + papas"
+    }, {
+      "id": "e45517d7-eecd-443f-a70d-ce0a693a1dcb",
+      "comment": "",
+      "command": "click",
+      "target": "id=Precio",
+      "targets": [
+        ["id=Precio", "id"],
+        ["name=Precio", "name"],
+        ["css=#Precio", "css:finder"],
+        ["xpath=//input[@id='Precio']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e9cdedc-ba1f-4c31-8384-1e749e439d61",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=Precio",
+      "targets": [
+        ["id=Precio", "id"],
+        ["name=Precio", "name"],
+        ["css=#Precio", "css:finder"],
+        ["xpath=//input[@id='Precio']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "006c11c5-5803-48a1-a932-30166626266d",
+      "comment": "",
+      "command": "type",
+      "target": "id=Precio",
+      "targets": [
+        ["id=Precio", "id"],
+        ["name=Precio", "name"],
+        ["css=#Precio", "css:finder"],
+        ["xpath=//input[@id='Precio']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "15"
+    }, {
+      "id": "d79ded2e-01b6-40bb-8bc2-b49c39c14cc4",
+      "comment": "",
+      "command": "click",
+      "target": "id=CategoriaId",
+      "targets": [
+        ["id=CategoriaId", "id"],
+        ["name=CategoriaId", "name"],
+        ["css=#CategoriaId", "css:finder"],
+        ["xpath=//select[@id='CategoriaId']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "51e77d01-d53c-4fe0-ab28-2fee6200cc51",
+      "comment": "",
+      "command": "select",
+      "target": "id=CategoriaId",
+      "targets": [],
+      "value": "label=Carnes"
+    }, {
+      "id": "f5ba75e8-ddc8-4005-94dc-40d36923442b",
+      "comment": "",
+      "command": "click",
+      "target": "id=crearPlato",
+      "targets": [
+        ["id=crearPlato", "id"],
+        ["css=#crearPlato", "css:finder"],
+        ["xpath=//input[@id='crearPlato']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "61c806aa-9f3d-4f72-8eea-65242866f5b0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(1)",
+      "targets": [
+        ["css=.form-group:nth-child(1)", "css:finder"],
+        ["xpath=//form/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "40abf25c-6155-486c-8ca0-47c7b3411445",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card-body",
+      "targets": [
+        ["css=.card-body", "css:finder"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7062edc5-d5ae-4deb-b44f-6c9e0965dda2",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=NombrePlato-error",
+      "targets": [
+        ["id=NombrePlato-error", "id"],
+        ["css=#NombrePlato-error", "css:finder"],
+        ["xpath=//span[@id='NombrePlato-error']", "xpath:attributes"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": "El nombre del plato es obligatorio"
+    }, {
+      "id": "ed18218e-477b-4ffe-8f0c-f34d4e954cc6",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "94d86c46-620a-4598-828c-37e24bf3da87",
+    "name": "ValidarDescripcionPlato",
+    "commands": [{
+      "id": "c862f353-1e8d-45e9-9e8e-fd052f523289",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44335/Home/Index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8b4955cb-9dd5-4de7-9b93-1aac0b19ced7",
+      "comment": "",
+      "command": "click",
+      "target": "id=goCarta",
+      "targets": [
+        ["css=.cufon:nth-child(4) > canvas", "css:finder"],
+        ["xpath=//a[@id='goCarta']/cufon[4]/canvas", "xpath:idRelative"],
+        ["xpath=//cufon[4]/canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1510f27a-7d70-43e0-9bb9-ed19a0e7d8bb",
+      "comment": "",
+      "command": "click",
+      "target": "id=agregarNuevoPlato",
+      "targets": [
+        ["id=agregarNuevoPlato", "id"],
+        ["linkText=Agregar nuevo plato", "linkText"],
+        ["css=#agregarNuevoPlato", "css:finder"],
+        ["xpath=//a[contains(text(),'Agregar nuevo plato')]", "xpath:link"],
+        ["xpath=//a[@id='agregarNuevoPlato']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Platos/Create')]", "xpath:href"],
+        ["xpath=//div/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Agregar nuevo plato')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "075d9fea-576d-4191-ab94-0cb645825e4b",
+      "comment": "",
+      "command": "click",
+      "target": "id=NombrePlato",
+      "targets": [
+        ["id=NombrePlato", "id"],
+        ["name=NombrePlato", "name"],
+        ["css=#NombrePlato", "css:finder"],
+        ["xpath=//input[@id='NombrePlato']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce7a00c7-6a1b-436c-92d1-f1d39962e8f1",
+      "comment": "",
+      "command": "type",
+      "target": "id=NombrePlato",
+      "targets": [
+        ["id=NombrePlato", "id"],
+        ["name=NombrePlato", "name"],
+        ["css=#NombrePlato", "css:finder"],
+        ["xpath=//input[@id='NombrePlato']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Lomo Saltado"
+    }, {
+      "id": "40dfa79f-79c8-450d-accf-0bab028dcd09",
+      "comment": "",
+      "command": "click",
+      "target": "id=Descripcion",
+      "targets": [
+        ["id=Descripcion", "id"],
+        ["name=Descripcion", "name"],
+        ["css=#Descripcion", "css:finder"],
+        ["xpath=//input[@id='Descripcion']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a5e33b6-5902-447c-b41f-e926738a57be",
+      "comment": "",
+      "command": "click",
+      "target": "id=Precio",
+      "targets": [
+        ["id=Precio", "id"],
+        ["name=Precio", "name"],
+        ["css=#Precio", "css:finder"],
+        ["xpath=//input[@id='Precio']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42f9507e-ffc4-40ef-99a5-04fa67966f05",
+      "comment": "",
+      "command": "type",
+      "target": "id=Precio",
+      "targets": [
+        ["id=Precio", "id"],
+        ["name=Precio", "name"],
+        ["css=#Precio", "css:finder"],
+        ["xpath=//input[@id='Precio']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "15"
+    }, {
+      "id": "ebc2dc22-c3c0-4ef5-b8ea-408afc0223f3",
+      "comment": "",
+      "command": "click",
+      "target": "id=CategoriaId",
+      "targets": [
+        ["id=CategoriaId", "id"],
+        ["name=CategoriaId", "name"],
+        ["css=#CategoriaId", "css:finder"],
+        ["xpath=//select[@id='CategoriaId']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b915433-28b2-4433-8ed8-35cd71a220aa",
+      "comment": "",
+      "command": "select",
+      "target": "id=CategoriaId",
+      "targets": [],
+      "value": "label=Carnes"
+    }, {
+      "id": "b53447a8-ff83-462b-a364-0c81634516bb",
+      "comment": "",
+      "command": "click",
+      "target": "id=crearPlato",
+      "targets": [
+        ["id=crearPlato", "id"],
+        ["css=#crearPlato", "css:finder"],
+        ["xpath=//input[@id='crearPlato']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "509a6447-1c90-4086-b851-630cc43f53dd",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.form-group:nth-child(2)",
+      "targets": [
+        ["css=.form-group:nth-child(2)", "css:finder"],
+        ["xpath=//form/div[2]", "xpath:position"]
+      ],
+      "value": "203,90.40625"
+    }, {
+      "id": "35918ef1-a9dd-4fa8-ba8a-4a332c7dbf5a",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=.form-group:nth-child(2)",
+      "targets": [
+        ["css=.form-group:nth-child(2)", "css:finder"],
+        ["xpath=//form/div[2]", "xpath:position"]
+      ],
+      "value": "203,90.40625"
+    }, {
+      "id": "b4766c6d-8575-4137-a578-96d1a7168dc7",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d06be96a-3a1e-46e4-b429-2434e185ecff",
+    "name": "ValidarPrecioPlatos",
+    "commands": [{
+      "id": "9fe85f4e-602d-4e0e-90ff-360e5d6a00c3",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44335/Home/Index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a1097b4-8938-46d0-ae66-2d01ac298d4c",
+      "comment": "",
+      "command": "click",
+      "target": "id=goCarta",
+      "targets": [
+        ["css=.cufon:nth-child(3) > canvas", "css:finder"],
+        ["xpath=//a[@id='goCarta']/cufon[3]/canvas", "xpath:idRelative"],
+        ["xpath=//cufon[3]/canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c56e0e89-6d0a-4468-b32e-065aad3b3a41",
+      "comment": "",
+      "command": "click",
+      "target": "id=agregarNuevoPlato",
+      "targets": [
+        ["id=agregarNuevoPlato", "id"],
+        ["linkText=Agregar nuevo plato", "linkText"],
+        ["css=#agregarNuevoPlato", "css:finder"],
+        ["xpath=//a[contains(text(),'Agregar nuevo plato')]", "xpath:link"],
+        ["xpath=//a[@id='agregarNuevoPlato']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Platos/Create')]", "xpath:href"],
+        ["xpath=//div/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Agregar nuevo plato')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d7b780c-9408-473a-a279-aee76552174b",
+      "comment": "",
+      "command": "click",
+      "target": "id=NombrePlato",
+      "targets": [
+        ["id=NombrePlato", "id"],
+        ["name=NombrePlato", "name"],
+        ["css=#NombrePlato", "css:finder"],
+        ["xpath=//input[@id='NombrePlato']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36909504-bd68-4d2c-a792-655f0b4f6c8d",
+      "comment": "",
+      "command": "type",
+      "target": "id=NombrePlato",
+      "targets": [
+        ["id=NombrePlato", "id"],
+        ["name=NombrePlato", "name"],
+        ["css=#NombrePlato", "css:finder"],
+        ["xpath=//input[@id='NombrePlato']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Lomo Saltado"
+    }, {
+      "id": "0bfb88c1-a1a8-4e25-9d5c-a7b16a414b39",
+      "comment": "",
+      "command": "click",
+      "target": "id=Descripcion",
+      "targets": [
+        ["id=Descripcion", "id"],
+        ["name=Descripcion", "name"],
+        ["css=#Descripcion", "css:finder"],
+        ["xpath=//input[@id='Descripcion']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1f8f33d-94ac-4990-ba76-e196bdf5d0ba",
+      "comment": "",
+      "command": "type",
+      "target": "id=Descripcion",
+      "targets": [
+        ["id=Descripcion", "id"],
+        ["name=Descripcion", "name"],
+        ["css=#Descripcion", "css:finder"],
+        ["xpath=//input[@id='Descripcion']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Carne de res + papas"
+    }, {
+      "id": "6799d212-16eb-4981-b307-4c79305096a5",
+      "comment": "",
+      "command": "click",
+      "target": "id=Precio",
+      "targets": [
+        ["id=Precio", "id"],
+        ["name=Precio", "name"],
+        ["css=#Precio", "css:finder"],
+        ["xpath=//input[@id='Precio']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "faace289-60a5-4147-bd8e-ebaa5143a5c3",
+      "comment": "",
+      "command": "click",
+      "target": "id=CategoriaId",
+      "targets": [
+        ["id=CategoriaId", "id"],
+        ["name=CategoriaId", "name"],
+        ["css=#CategoriaId", "css:finder"],
+        ["xpath=//select[@id='CategoriaId']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "379f0d0c-da06-4815-a5c7-ee6fca59c9cc",
+      "comment": "",
+      "command": "select",
+      "target": "id=CategoriaId",
+      "targets": [],
+      "value": "label=Carnes"
+    }, {
+      "id": "5865d8e3-8b57-48c1-a9cf-eadad6f3bdb4",
+      "comment": "",
+      "command": "click",
+      "target": "id=crearPlato",
+      "targets": [
+        ["id=crearPlato", "id"],
+        ["css=#crearPlato", "css:finder"],
+        ["xpath=//input[@id='crearPlato']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2689ea4d-21ec-4829-9476-036de45ca0d7",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=form",
+      "targets": [
+        ["css=form", "css:finder"],
+        ["xpath=//form[@action='/Platos/Create']", "xpath:attributes"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": "185,267.40625"
+    }, {
+      "id": "68f9a96d-8663-48d8-b207-9bd9c2def670",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=form",
+      "targets": [
+        ["css=form", "css:finder"],
+        ["xpath=//form[@action='/Platos/Create']", "xpath:attributes"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": "185,267.40625"
+    }, {
+      "id": "86c9ea7b-38b1-4faf-9f99-e3d5077d4218",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=form",
+      "targets": [
+        ["css=form", "css:finder"],
+        ["xpath=//form[@action='/Platos/Create']", "xpath:attributes"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": "185,267.40625"
+    }, {
+      "id": "2c023d56-d0ec-49f5-844c-043cab63aa92",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card-body",
+      "targets": [
+        ["css=.card-body", "css:finder"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8afe4eb-2e14-47e5-ad44-887742b8b100",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=Precio-error",
+      "targets": [
+        ["id=Precio-error", "id"],
+        ["css=#Precio-error", "css:finder"],
+        ["xpath=//span[@id='Precio-error']", "xpath:attributes"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": "El precio del plato es obligatorio"
+    }, {
+      "id": "11f9c4c8-3ffb-4881-8fc1-e40e0f26fe85",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b4a7b003-b11f-4f73-aca2-f05b80760460",
+    "name": "ValidarCrearNuevoPlato",
+    "commands": [{
+      "id": "99cf32ed-4c90-41d8-a87f-ddbd81b89acd",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44335/Home/Index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "590d1ca1-506c-46c3-a67f-3b6a99098f1a",
+      "comment": "",
+      "command": "click",
+      "target": "id=goCarta",
+      "targets": [
+        ["css=.cufon:nth-child(3) > canvas", "css:finder"],
+        ["xpath=//a[@id='goCarta']/cufon[3]/canvas", "xpath:idRelative"],
+        ["xpath=//cufon[3]/canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9a48485-6a57-4b8c-81b6-d48de7947df0",
+      "comment": "",
+      "command": "click",
+      "target": "id=agregarNuevoPlato",
+      "targets": [
+        ["id=agregarNuevoPlato", "id"],
+        ["linkText=Agregar nuevo plato", "linkText"],
+        ["css=#agregarNuevoPlato", "css:finder"],
+        ["xpath=//a[contains(text(),'Agregar nuevo plato')]", "xpath:link"],
+        ["xpath=//a[@id='agregarNuevoPlato']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Platos/Create')]", "xpath:href"],
+        ["xpath=//div/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Agregar nuevo plato')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "de953ab1-650d-491a-9cd8-aa5aa6f4d1f6",
+      "comment": "",
+      "command": "click",
+      "target": "id=NombrePlato",
+      "targets": [
+        ["id=NombrePlato", "id"],
+        ["name=NombrePlato", "name"],
+        ["css=#NombrePlato", "css:finder"],
+        ["xpath=//input[@id='NombrePlato']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7edf1e7f-0cf4-4e86-8580-ceef47d11e59",
+      "comment": "",
+      "command": "type",
+      "target": "id=NombrePlato",
+      "targets": [
+        ["id=NombrePlato", "id"],
+        ["name=NombrePlato", "name"],
+        ["css=#NombrePlato", "css:finder"],
+        ["xpath=//input[@id='NombrePlato']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Bife Argentino"
+    }, {
+      "id": "ee2137fc-846e-40ba-ad85-6af8d646c32d",
+      "comment": "",
+      "command": "click",
+      "target": "id=Descripcion",
+      "targets": [
+        ["id=Descripcion", "id"],
+        ["name=Descripcion", "name"],
+        ["css=#Descripcion", "css:finder"],
+        ["xpath=//input[@id='Descripcion']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fec34a09-d4b0-44b8-a6a5-970030cc1b43",
+      "comment": "",
+      "command": "type",
+      "target": "id=Descripcion",
+      "targets": [
+        ["id=Descripcion", "id"],
+        ["name=Descripcion", "name"],
+        ["css=#Descripcion", "css:finder"],
+        ["xpath=//input[@id='Descripcion']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Carne de res + papas"
+    }, {
+      "id": "26d5f5d0-7fe1-454a-a45a-4425e29f3c18",
+      "comment": "",
+      "command": "click",
+      "target": "id=Precio",
+      "targets": [
+        ["id=Precio", "id"],
+        ["name=Precio", "name"],
+        ["css=#Precio", "css:finder"],
+        ["xpath=//input[@id='Precio']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5de75488-e62c-4af8-b1f9-26ba13c35b21",
+      "comment": "",
+      "command": "type",
+      "target": "id=Precio",
+      "targets": [
+        ["id=Precio", "id"],
+        ["name=Precio", "name"],
+        ["css=#Precio", "css:finder"],
+        ["xpath=//input[@id='Precio']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "15"
+    }, {
+      "id": "24e91f28-e585-4829-8a03-b7fa9392ff8f",
+      "comment": "",
+      "command": "click",
+      "target": "id=CategoriaId",
+      "targets": [
+        ["id=CategoriaId", "id"],
+        ["name=CategoriaId", "name"],
+        ["css=#CategoriaId", "css:finder"],
+        ["xpath=//select[@id='CategoriaId']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f10024c8-def6-4622-a8fe-c21affde1eb6",
+      "comment": "",
+      "command": "select",
+      "target": "id=CategoriaId",
+      "targets": [],
+      "value": "label=Carnes"
+    }, {
+      "id": "83fdb809-a2fd-4aad-b23c-311e678425f4",
+      "comment": "",
+      "command": "click",
+      "target": "id=crearPlato",
+      "targets": [
+        ["id=crearPlato", "id"],
+        ["css=#crearPlato", "css:finder"],
+        ["xpath=//input[@id='crearPlato']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "48a3be22-cf65-4da4-9073-691dabc719fa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//main/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a097071a-e187-480b-909a-02d510550a0e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//main/div/div", "xpath:position"]
+      ],
+      "value": "El plato se ha creado correctamente\\n×"
+    }, {
+      "id": "32fa3d99-424a-4787-a038-4c212f5f9151",
+      "comment": "",
+      "command": "click",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'×')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dcbecd88-6803-41a7-8356-5f836bbe5f86",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f0976545-c3e4-4256-8710-ba0acd068708",
+    "name": "ValidarEditarPlato",
+    "commands": [{
+      "id": "f4a4338d-ab71-4c1e-9e55-6edbece505db",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44335/Home/Index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba3802d9-ff4b-4f09-9628-b46beb289e13",
+      "comment": "",
+      "command": "click",
+      "target": "id=goCarta",
+      "targets": [
+        ["css=.cufon:nth-child(2) > canvas", "css:finder"],
+        ["xpath=//a[@id='goCarta']/cufon[2]/canvas", "xpath:idRelative"],
+        ["xpath=//cufon[2]/canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e82b4368-6e2e-436c-bfd0-3d8d83a156fb",
+      "comment": "",
+      "command": "click",
+      "target": "id=editPlato",
+      "targets": [
+        ["css=tr:nth-child(3) #editPlato", "css:finder"],
+        ["xpath=(//a[contains(text(),'Editar')])[3]", "xpath:link"],
+        ["xpath=(//a[@id='editPlato'])[3]", "xpath:attributes"],
+        ["xpath=//table[@id='datatable']/tbody/tr[3]/td[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/Platos/Edit/4')]", "xpath:href"],
+        ["xpath=//tr[3]/td[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "84ee6bb4-6028-41bf-9fca-5c51260f4b90",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "445e7da0-e965-4e87-90ac-2ad2a513b1b9",
+      "comment": "",
+      "command": "type",
+      "target": "id=NombrePlato",
+      "targets": [
+        ["id=NombrePlato", "id"],
+        ["name=NombrePlato", "name"],
+        ["css=#NombrePlato", "css:finder"],
+        ["xpath=//input[@id='NombrePlato']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Jugo Especial"
+    }, {
+      "id": "7809fe48-b13e-40e4-b3ac-725800227f29",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "69315d18-da2f-4f80-bd68-4ed690ce5e51",
+      "comment": "",
+      "command": "type",
+      "target": "id=Descripcion",
+      "targets": [
+        ["id=Descripcion", "id"],
+        ["name=Descripcion", "name"],
+        ["css=#Descripcion", "css:finder"],
+        ["xpath=//input[@id='Descripcion']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Fresa + Leche"
+    }, {
+      "id": "e80862d6-c6de-477a-a422-368bf73e2c62",
+      "comment": "",
+      "command": "click",
+      "target": "id=CategoriaId",
+      "targets": [
+        ["id=CategoriaId", "id"],
+        ["name=CategoriaId", "name"],
+        ["css=#CategoriaId", "css:finder"],
+        ["xpath=//select[@id='CategoriaId']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "970e9749-2a57-40c5-9f0b-512739f8db87",
+      "comment": "",
+      "command": "select",
+      "target": "id=CategoriaId",
+      "targets": [],
+      "value": "label=Jugos Especiales"
+    }, {
+      "id": "fd41616f-fcfe-453b-9075-2c584638896b",
+      "comment": "",
+      "command": "click",
+      "target": "id=editarPlato",
+      "targets": [
+        ["id=editarPlato", "id"],
+        ["css=#editarPlato", "css:finder"],
+        ["xpath=//input[@id='editarPlato']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1088865-1d28-401d-8586-13b257e0e734",
+      "comment": "",
+      "command": "click",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//main/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7379e04a-8395-4b7c-85f0-f564ab353b05",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//main/div/div", "xpath:position"]
+      ],
+      "value": "El plato se ha editado correctamente\\n×"
+    }, {
+      "id": "eee6f7c3-5717-45da-bf24-ebfcf3d11eaf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.close",
+      "targets": [
+        ["css=.close", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'×')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e3b5384-d844-4ea7-9344-6c76919b2911",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a23b2f0a-1fd6-4d14-8236-8ccf6cc69f0b",
+    "name": "ValidarEliminarPlato",
+    "commands": [{
+      "id": "84b979ae-62e7-421a-a556-fa63d777b84c",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44335/Home/Index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6ecb6804-17ce-4776-9e9e-bb916e28df79",
+      "comment": "",
+      "command": "click",
+      "target": "id=goCarta",
+      "targets": [
+        ["css=.cufon:nth-child(3) > canvas", "css:finder"],
+        ["xpath=//a[@id='goCarta']/cufon[3]/canvas", "xpath:idRelative"],
+        ["xpath=//cufon[3]/canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "423557d9-a109-4525-98c4-e172043ae14e",
+      "comment": "",
+      "command": "click",
+      "target": "id=deletePlato",
+      "targets": [
+        ["css=tr:nth-child(4) #deletePlato", "css:finder"],
+        ["xpath=(//a[contains(text(),'Eliminar')])[4]", "xpath:link"],
+        ["xpath=(//a[@id='deletePlato'])[4]", "xpath:attributes"],
+        ["xpath=//table[@id='datatable']/tbody/tr[4]/td[5]/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/Platos/Delete/5')]", "xpath:href"],
+        ["xpath=//tr[4]/td[5]/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6b8d262-19f5-4ae1-a089-4cfb115f2ffe",
+      "comment": "",
+      "command": "click",
+      "target": "id=eliminarPlato",
+      "targets": [
+        ["id=crearPlato", "id"],
+        ["css=#crearPlato", "css:finder"],
+        ["xpath=//input[@id='crearPlato']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9231573-9cf3-4927-8b7f-76a4abbc409d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//main/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fdceef8e-e29e-4c42-a1c7-68d6c20d7c6e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//main/div/div", "xpath:position"]
+      ],
+      "value": "El plato se ha eliminado correctamente\\n×"
+    }, {
+      "id": "566ed12e-cc5a-41a3-8d84-1bceb0f5e67d",
+      "comment": "",
+      "command": "click",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'×')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b87c370e-71ee-4749-bc1a-584c495ac8e0",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9a3ed117-1986-4213-ad0b-86f4beebebb5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6d0419d8-8a93-4893-a752-e649fc85be4c"]
+  }],
+  "urls": ["https://localhost:44335/Home/Index"],
+  "plugins": []
+}
